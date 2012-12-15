@@ -2,30 +2,32 @@
 
 #define LIMIT 4000000
 
+int even_fib_terms_sum(int, int, int);
+
 int main() 
 {
-  int number1;
-  int number2;
+  int num1;
+  int num2;
   int sum;
 
   num1 = 0;
   num2 = 1;
 
-  sum = even_valued_fibonacci_terms_sum(number1, number2, LIMIT);
+  sum = even_fib_terms_sum(num1, num2, LIMIT);
 
   printf("%d\n", sum);
 
   return 0;
 }
 
-int even_valued_fibonacci_terms_sum(int number1, int number2, int limit)
+int even_fib_terms_sum(int num1, int num2, int limit)
 {
-  if(number2 >= limit)
+  if(num2 >= limit)
     return 0;
 
-  if(number2 % 2 == 0)
-    return number2 + even_fib_values_sum(number2, number1 + number2, limit);
+  if(num2 % 2 == 0)
+    return num2 + even_fib_terms_sum(num2, num1 + num2, limit);
 
-  return even_fib_values_sum(number2, number1 + number2, limit);
+  return even_fib_terms_sum(num2, num1 + num2, limit);
 }
 

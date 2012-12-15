@@ -4,6 +4,8 @@
 #define SIZE 8
 #define LIMIT 21
 
+int div_num(int, int);
+
 int main()
 {
   int i;

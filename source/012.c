@@ -10,7 +10,7 @@ int main()
 
   for(i = 0; divisor_count(gauss(i)) <= 500; i++);
 
-  printf("%ld\n", gauss(i));
+  printf("%d\n", gauss(i));
 
   return 0;
 }
