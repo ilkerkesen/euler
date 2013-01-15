@@ -22,6 +22,8 @@ int main()
 
   printf("%d\n", max_sum(array, 13));
 
+  fclose(fp);
+
   return 0;
 }
 
