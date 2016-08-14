@@ -6,7 +6,6 @@ from itertools import combinations_with_replacement
 
 LIMIT = 28213
 
-
 def is_abundant(num):
     divs = set([1])
     for i in range(2, int(sqrt(num)+1)):
@@ -31,3 +30,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
