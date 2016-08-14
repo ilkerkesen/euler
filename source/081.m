@@ -16,4 +16,4 @@ for i = 1:m
     end
 end
 
-printf("%d\n", matrix(m, n));
+printf('%d\n', matrix(m, n));
